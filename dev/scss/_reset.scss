@@ -1,0 +1,12 @@
+* {
+  margin: 0; //отступы
+  padding: 0;
+  box-sizing: border-box; //падинги не учитывает
+}
+
+//
+textarea,
+input,
+button {
+  outline: none; //отключение подсветки
+}
