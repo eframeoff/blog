@@ -3,7 +3,7 @@ const router = express.Router();
 const moment = require("moment");
 moment.locale("ru");
 const models = require("../models");
-const config = require("../config");
+// const config = require("../config");
 
 async function posts(req, res) {
   const userId = req.session.userId;
@@ -34,6 +34,7 @@ async function posts(req, res) {
     throw new Error("Serv err");
   }
 }
+
 //routes
 router.get("/", function (req, res) {
   posts(req, res);
@@ -93,7 +94,6 @@ router.get("/posts/:post", async (req, res, next) => {
   }
 });
 
-// users post
 router.get("/users/:login/:page*?", async (req, res) => {
   const userId = req.session.userId;
   const userLogin = req.session.userLogin;
@@ -110,12 +110,9 @@ router.get("/users/:login/:page*?", async (req, res) => {
     })
       .skip(perPage * page - perPage)
       .limit(perPage)
-      // населяем поле owner .юзером
       .populate("owner")
-      // новый пост в начало
       .sort({ createdAt: -1 });
     const count = await models.Post.count({
-      // хозяин постов только юзер с id
       owner: user.id,
     });
     res.render("archive/user", {

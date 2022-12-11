@@ -15,7 +15,6 @@ $borderRadius: 6px;
 @import "reset";
 @import "grid";
 @import "typography";
-
 @import "forms";
 @import "links";
 
@@ -26,7 +25,7 @@ html {
 }
 
 body {
-  display: flex; //блоки
+  display: flex;
   flex-direction: column;
   flex: auto; //растягивается
   color: $blackColor;

@@ -3,12 +3,8 @@
   <% } %> <% items.forEach(function(item){ %>
   <li id="<%= item.id %>">
     <div class="head">
-      <a href="/users/<%= item.owner.login %>">
-        <%= item.owner.login %>
-      </a>
-      <spam class="date">
-        <%= moment(item.createdAt).fromNow(); %>
-      </spam>
+      <a href="/users/<%= item.owner.login %>"> <%= item.owner.login %> </a>
+      <spam class="date"> <%= moment(item.createdAt).fromNow(); %> </spam>
     </div>
     <%= item.body %>
     <span class="link reply">ответить</span>

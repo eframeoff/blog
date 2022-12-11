@@ -1,12 +1,9 @@
-//получение, обработка данных сервером
-//возвращение ответа клиенту
-
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt-nodejs");
 
 const models = require("../models");
-// POST is register
+
 router.post("/register", (req, res) => {
   const login = req.body.login;
   const password = req.body.password;
@@ -86,7 +83,6 @@ router.post("/register", (req, res) => {
   }
 });
 
-// POST is login
 router.post("/login", (req, res) => {
   const login = req.body.login;
   const password = req.body.password;
@@ -139,7 +135,6 @@ router.post("/login", (req, res) => {
   }
 });
 
-// GET for logout
 router.get("/logout", (req, res) => {
   if (req.session) {
     // delete session object

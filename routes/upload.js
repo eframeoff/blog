@@ -48,12 +48,11 @@ const storage = diskStorage({
     });
 
     // write to post
+
     const uploads = post.uploads;
     uploads.unshift(upload.id);
     post.uploads = uploads;
     await post.save();
-
-    //
     req.filePath = dir + "/" + fileName;
     cb(null, fileName);
   },

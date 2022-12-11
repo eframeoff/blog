@@ -1,12 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const tr = require("transliter");
-// чтоб записалось без тегов в БД
+// запись без тегов в БД
 //const TurndownService = require("turndown");
 
 const models = require("../models");
 
-// Get for add
 router.get("/add", async (req, res) => {
   const userId = req.session.userId;
   const userLogin = req.session.userLogin;
@@ -39,7 +38,6 @@ router.get("/add", async (req, res) => {
   }
 });
 
-//Get for add
 router.get("/edit/:id", async (req, res, next) => {
   const userId = req.session.userId;
   const userLogin = req.session.userLogin;
