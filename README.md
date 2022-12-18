@@ -2,12 +2,11 @@
 
 ### Учебное приложение по видеоурокам (2020)
 
-Клиент крутится на localhost:3000
-Сервер крутится на localhost:3001
-БД - MongoDB
-На фронте - js, jquery, ejs, sass
-На бэке - node.js (< 12), express
-Сборщик - gulp
+- Клиент: localhost:3000
+- Сервер:  localhost:3001
+- БД - MongoDB
+- Javascript, JQuery, Ejs, Sass, Node.js (< 12), Express
+- Сборщик - Gulp
 
 ### Как запускать? Установка пакетов
 
