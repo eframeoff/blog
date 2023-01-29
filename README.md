@@ -3,8 +3,8 @@
 ## Учебное приложение по видеоурокам
 
 ### Технологии
-- Frontend: Javascript, JQuery, Ejs, Sass
-- Backend: Node.js (< 12), Express, MongoDB,
+- Frontend: Javascript, JQuery, Ejs, Sass (localhost:3000)
+- Backend: Node.js (< 12), Express, MongoDB (localhost:3001)
 - Сборщик - Gulp
 
 ### Как запускать? Установка пакетов
