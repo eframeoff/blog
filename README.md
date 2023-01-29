@@ -1,11 +1,10 @@
-## Блог
+# Блог
 
-### Учебное приложение по видеоурокам (2020)
+## Учебное приложение по видеоурокам
 
-- Клиент: localhost:3000
-- Сервер:  localhost:3001
-- БД - MongoDB
-- Javascript, JQuery, Ejs, Sass, Node.js (< 12), Express
+### Технологии
+- Frontend: Javascript, JQuery, Ejs, Sass
+- Backend: Node.js (< 12), Express, MongoDB,
 - Сборщик - Gulp
 
 ### Как запускать? Установка пакетов
