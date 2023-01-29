@@ -4,7 +4,7 @@
 
 ### Технологии
 - Frontend: Javascript, JQuery, Ejs, Sass (localhost:3000)
-- Backend: Node.js (< 12), Express, MongoDB (localhost:3001)
+- Backend: Node.js (< v12), Express, MongoDB (localhost:3001)
 - Сборщик - Gulp
 
 ### Как запускать? Установка пакетов
